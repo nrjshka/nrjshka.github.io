@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8" /> 
 
-        <title>Исчерпывающий справочник по JavaScript для вашего следующего собеседования.</title>
+        <title>nrjshka.github.io</title>
         <meta property="og:image" content="https://habr.com/share/publication/345882/dde34247c0bf6fb35eb36ee8daad0cb7/?v=1">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
@@ -135,6 +135,36 @@
         </style>
     </head>
     <body>
+        <script type="text/javascript">
+            (function(window,document,n,project_ids){
+                window.GudokData=n;
+                if(typeof project_ids !== "object"){
+                    project_ids = [project_ids]
+                };
+                window[n] = {};
+                window[n]["projects"]=project_ids;
+                config_load(project_ids.join(','));
+                
+                function config_load(cId){
+                    var a=document.getElementsByTagName("script")[0];
+                    var s=document.createElement("script");
+                    var i=function(){
+                        a.parentNode.insertBefore(s,a)
+                    };
+                    
+                    s.type="text/javascript";
+                    s.async=true;
+                    s.src="//mod.gudok.tel/script.js?sid="+cId;
+        
+                    if(window.opera == "[object Opera]"){
+                        document.addEventListener("DOMContentLoaded", i, false)
+                    }
+                    else{
+                        i();
+                    }
+                }
+            })(window, document, "gd", "kr5g8r1m44");
+        </script>
         <!-- Yandex.Metrika counter -->
         <script type="text/javascript" >
             (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -161,9 +191,27 @@
             "
             onclick="ym(60714655,'reachGoal','contacts')"
         >
-            Подберем вам индивидуальный план для изучения JavaScript
+            +7 (915) 966 93 85
         </button>
-        
+        <button>
+            +79159669385
+        </button>
+        <button>
+            +79159669385 -- должен поменять
+        </button>
+
+        <button>
+            89159669385 -- поменяет ли
+        </button>
+
+        <button>
+            89159669315 -- левый номер
+        </button>
+
+        <button>
+            +79159669315 -- левый номер
+        </button>
+        <!--
         <br>
         <img style="max-height: 400px; width: auto; max-width: 100%" src="https://habrastorage.org/webt/aw/qw/ur/awqwur1bihc0fi73d9p_9odi-gw.jpeg"><br>
         <br>
@@ -347,6 +395,6 @@
         </code></pre><br>
         Переменные частично подняты. Переменные, объявленные с помощью оператора <b>var</b> подняты, но их значения — нет.<br>
         <br>
-
+        -->
     </body>
 </html>
